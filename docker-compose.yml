@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  zabbix-bot:
+    image: zabbix-slackbot:latest
+    restart: always
+    environment:
+      SLACK_CHANNEL: slack-dev
+      SLACK_TOKEN: xoxb-something-something-something
+      ZABBIX_USER: your-zabbix-account
+      ZABBIX_PASSWORD: your-zabbix-password
+      ZABBIX_URL: http://your-zabbix-server/zabbix/
+      ZABBIX_CYCLE_TIME_SECONDS: 30
+      MAX_AGE_MINUTES: 1440
+      RESOLVE_MINUTES: 3
