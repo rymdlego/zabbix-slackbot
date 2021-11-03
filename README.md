@@ -37,7 +37,7 @@ want some type of alerts in one channel and some other alerts in another.
 The way this is done is by using tags in Zabbix. Simply tag your templates,
 hosts or items with the name **slack** and the value set to the name of your channel.
 
-Pretty easy, eh?
+Pretty easy, eh? :D
 
 ### Building the image
 
